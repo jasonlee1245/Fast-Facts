@@ -1,0 +1,33 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.half {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.rightSide {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const api = require('./routes/api.js');
 const app = express();
 const PORT = 3000;
 
@@ -10,6 +11,8 @@ app.use(
     extended: true,
   })
 )
+
+app.use('/api', api); 
 app.use('/build', express.static(path.join(__dirname,"../build")))
 app.get('/', function(req, res) {
   const index = path.resolve(__dirname, '../index.html');
